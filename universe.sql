@@ -305,7 +305,7 @@ ALTER TABLE ONLY public.solar_system ADD CONSTRAINT solar_system_pkey PRIMARY KE
 --
 -- Name: star star_data_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.star ADD CONSTRAINT star_data_key UNIQUE (data);
 
 --
 -- Name: star star_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
