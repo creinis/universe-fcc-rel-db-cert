@@ -21,7 +21,15 @@ DROP DATABASE universe;
 --
 -- Name: universe; Type: DATABASE; Schema: -; Owner: freecodecamp
 --
+CREATE DATABASE universe WITH 
+    TEMPLATE = template0 
+    ENCODING = 'UTF8' 
+    LC_COLLATE = 'C.UTF-8' 
+    LC_CTYPE = 'C.UTF-8';
 
+ALTER DATABASE universe OWNER TO freecodecamp;
+
+\connect universe
 
 
 SET statement_timeout = 0;
