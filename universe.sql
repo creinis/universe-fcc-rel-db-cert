@@ -290,7 +290,7 @@ ALTER TABLE ONLY public.planet ADD CONSTRAINT planet_pkey PRIMARY KEY (planet_id
 --
 -- Name: planet planet_star_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.planet ADD CONSTRAINT planet_star_id_key UNIQUE (star_id);
 
 --
 -- Name: solar_system solar_system_data_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
