@@ -310,7 +310,7 @@ ALTER TABLE ONLY public.star ADD CONSTRAINT star_data_key UNIQUE (data);
 --
 -- Name: star star_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.star ADD CONSTRAINT star_pkey PRIMARY KEY (star_id);
 
 --
 -- Name: star star_register_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
