@@ -326,7 +326,9 @@ ALTER TABLE ONLY public.moon
 --
 -- Name: planet planet_star_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.planet
+    ADD CONSTRAINT planet_star_id_fkey FOREIGN KEY (star_id) REFERENCES public.star(star_id);
+    
 --
 -- Name: star star_register_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
 --
