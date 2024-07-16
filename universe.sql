@@ -255,7 +255,7 @@ INSERT INTO public.star VALUES (20, 'glx I', 123, 100000000, 456, true, 1, 'data
 --
 -- Name: galaxy galaxy_data_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.galaxy ADD CONSTRAINT galaxy_data_key UNIQUE (data);
 
 --
 -- Name: galaxy galaxy_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
