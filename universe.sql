@@ -88,7 +88,21 @@ ALTER TABLE public.moon OWNER TO freecodecamp;
 --
 -- Name: planet; Type: TABLE; Schema: public; Owner: freecodecamp
 --
+CREATE TABLE public.planet (
+    planet_id integer NOT NULL,
+    name character varying(40),
+    description integer,
+    age numeric(100,0),
+    type integer,
+    has_life boolean,
+    data_01 integer NOT NULL,
+    data_02 text,
+    data_04 boolean,
+    star_id integer NOT NULL,
+    data integer
+);
 
+ALTER TABLE public.planet OWNER TO freecodecamp;
 
 --
 -- Name: solar_system; Type: TABLE; Schema: public; Owner: freecodecamp
