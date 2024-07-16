@@ -280,7 +280,7 @@ ALTER TABLE ONLY public.moon ADD CONSTRAINT moon_planet_id_key UNIQUE (planet_id
 --
 -- Name: planet planet_data_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.planet ADD CONSTRAINT planet_data_key UNIQUE (data);
 
 --
 -- Name: planet planet_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
